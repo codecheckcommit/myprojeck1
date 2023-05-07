@@ -1,0 +1,24 @@
+#--------------------------------------------
+# my Action for some reasons
+#--------------------------------------------
+
+name: basics-actions
+
+on:
+  push:
+      branches:
+       - main
+
+jobs:
+	my_testing:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Print hello message
+		   	   run: echo "Hello world from testing"
+		
+	my_deploing:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Print hello message
+		   	   run: echo "Hello world from deploing"
+		
