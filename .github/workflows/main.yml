@@ -19,6 +19,9 @@ jobs:
           echo "Hello again"
           echo "my friend"
           echo "App name is ${{ env.APPLICATION_NAME }}"
+          
+      - name: What inside?
+        run: ls -la
 
   my_deploing:
     runs-on: ubuntu-latest
