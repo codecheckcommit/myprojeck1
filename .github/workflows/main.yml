@@ -24,6 +24,8 @@ jobs:
         run: ls -la      
       - name: Git clone repo
         uses: actions/checkout@v1
+      - name: What inside now?
+        run: ls -la    
 
   my_deploing:
     runs-on: ubuntu-latest
@@ -33,8 +35,8 @@ jobs:
         run: echo "Hello world from deploing"
       - name: Print deployment pacage
         run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"      
-      - name: Lets test some packages if they are here
-        run: |
-          aws --version
-          zip --version
+      - name: Lets test some packages if they are here 1
+        run: aws --version
+      - name: Lets test some packages if they are here 2
+        run: zip --version
         
