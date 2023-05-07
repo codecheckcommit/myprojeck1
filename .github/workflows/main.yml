@@ -9,7 +9,7 @@ on:
 
 jobs:
   my_testing:
-    runs-on: ubuntu-latestdsfsd
+    runs-on: ubuntu-latest
     steps:
       - name: Print hello message in testing
         run: echo "Hello world from testing"
