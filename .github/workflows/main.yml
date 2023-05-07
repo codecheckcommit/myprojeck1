@@ -36,7 +36,7 @@ jobs:
     steps:
       - name: Print hello message in deploing
         run: echo "Hello world from deploing"
-      - name: Print deployment pacage
+      - name: Print deployment package
         run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"      
       - name: Lets test some packages if they are here 1
         run: aws --version
